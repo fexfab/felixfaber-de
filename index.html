@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Felix Faber – Autor</title>
+  <meta name="description" content="Offizielle Website von Felix Faber. Thriller-Autor. Informationen zu Büchern und Kontakt." />
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b0b0c;
+      color: #e9e9ea;
+    }
+    a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(233,233,234,.35); }
+    a:hover { border-bottom-color: rgba(233,233,234,.75); }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 20px 72px;
+    }
+    header { margin-bottom: 40px; }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    .tagline { margin: 0; color: rgba(233,233,234,.78); }
+    .card {
+      border: 1px solid rgba(233,233,234,.12);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      background: rgba(255,255,255,.03);
+      margin-bottom: 16px;
+    }
+    .row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .btn {
+      display: inline-block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(233,233,234,.16);
+      background: rgba(255,255,255,.04);
+    }
+    .muted { color: rgba(233,233,234,.72); }
+    footer { margin-top: 34px; color: rgba(233,233,234,.6); font-size: 13px; }
+    .sep { opacity: .5; padding: 0 6px; }
+    @media (prefers-color-scheme: light) {
+      body { background: #ffffff; color: #121212; }
+      a { border-bottom-color: rgba(18,18,18,.25); }
+      .card { border-color: rgba(18,18,18,.10); background: rgba(0,0,0,.02); }
+      .btn { border-color: rgba(18,18,18,.12); background: rgba(0,0,0,.02); }
+      .tagline,.muted,footer { color: rgba(18,18,18,.70); }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Felix Faber</h1>
+      <p class="tagline">Autor. Thriller. Offizielle Website.</p>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <strong>Aktuelles Buch</strong>
+        <span class="muted">•</span>
+        <span class="muted">Chimäre – Kap der Rache</span>
+      </div>
+      <p class="muted" style="margin:10px 0 0;">
+        Kurzinfo: (1–2 Sätze Teaser – kann ich dir gleich formulieren.)
+      </p>
+      <div class="btns">
+        <a class="btn" href="HIER_DEIN_KAUF_LINK" target="_blank" rel="noopener">Jetzt ansehen / kaufen</a>
+        <a class="btn" href="mailto:HIER_DEINE_MAILADRESSE">Kontakt</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <strong>Über mich</strong>
+      <p class="muted" style="margin:10px 0 0;">
+        (3–5 Sätze Autorenprofil – minimalistisch, seriös. Das schreibe ich dir auf Wunsch passend.)
+      </p>
+    </section>
+
+    <section class="card">
+      <strong>Links</strong>
+      <p class="muted" style="margin:10px 0 0;">
+        <a href="HIER_DEIN_AMAZON_AUTORENPROFIL" target="_blank" rel="noopener">Amazon Autorenseite</a>
+        <span class="sep">·</span>
+        <a href="HIER_DEIN_VERLAGS_LINK" target="_blank" rel="noopener">Verlags-/Shop-Link</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Felix Faber
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
