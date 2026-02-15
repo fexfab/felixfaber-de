@@ -43,7 +43,7 @@
 html, body { height: 100%; }
 body{
   margin:0;
-  background: var(--bg);
+  background: radial-gradient(circle at top left, #1a1d21 0%, #0f1114 60%);
   color: var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
   line-height: 1.55;
@@ -85,11 +85,11 @@ header{
   border-bottom: 1px solid var(--border);
 }
 
+/* --- Header subtiler --- */
 h1 {
-  font-size: clamp(2.4rem, 4vw, 3.2rem);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 
 .tagline{
@@ -121,7 +121,7 @@ section{ margin-top: 26px; }
   font-size: 0.92rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 48px;
   opacity: 0.78;
 }
 
@@ -178,6 +178,17 @@ footer a{
   border-bottom: 1px solid transparent;
 }
 footer a:hover{ border-bottom-color: var(--link); }
+
+/* --- Links neutralisieren --- */
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+    
     </style>
   
 </head>
