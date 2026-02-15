@@ -7,7 +7,7 @@
   <meta name="description" content="Offizielle Website von Felix Faber. Thriller-Autor. Informationen zu Büchern und Kontakt." />
   <style>
   :root{
-  --bg: #f5f3ef;
+  --bg: #f4f5f7;
   --text: #161616;
   --muted: #555;
   --card: rgba(255,255,255,0.72);
@@ -23,11 +23,11 @@
 
 @media (prefers-color-scheme: dark){
   :root{
-    --bg: #0b0b0e;
+    --bg: #0f1114;
     --text: #f1f1f1;
     --muted: #b9b9c2;
-    --card: rgba(18,18,22,0.72);
-    --border: rgba(255,255,255,0.12);
+    --card: #161a1f;
+    --border: #242a31;
     --shadow: 0 12px 34px rgba(0,0,0,0.55);
 
     --accent: #f1f1f1;
@@ -85,12 +85,11 @@ header{
   border-bottom: 1px solid var(--border);
 }
 
-h1{
-  margin: 0 0 6px;
-  font-size: clamp(2.2rem, 4vw, 3.0rem);
-  letter-spacing: 0.02em;
-  color: var(--accent);
-  font-weight: 720;
+h1 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .tagline{
@@ -102,10 +101,14 @@ h1{
 /* Sektionen & Cards */
 section{ margin-top: 26px; }
 
+    .card:first-of-type {
+  border-top: 2px solid var(--accent);
+}
+    
 .card{
   background: var(--card);
+  border-radius: 8px;
   border: 1px solid var(--border);
-  border-radius: 18px;
   padding: 22px 20px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
@@ -136,8 +139,10 @@ section{ margin-top: 26px; }
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding: 10px 14px;
-  border-radius: 14px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid var(--border);
   text-decoration:none;
   border: 1px solid var(--btn-border);
   transition: transform .12s ease, opacity .12s ease;
